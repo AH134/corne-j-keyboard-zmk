@@ -164,6 +164,8 @@
 &trans  &trans          &trans    &trans       &trans   &trans  &trans            &trans          &trans    &trans    &trans        &trans     &trans  &trans
                                   &trans       &trans   &trans                                    &trans    &trans    &trans
             >;
+
+            label = "nav";
         };
 
         symbol {
@@ -173,6 +175,8 @@
 &trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp BSLH           &kp UNDER  &trans            &trans          &backdir       &kp DOLLAR        &braceenter           &kp RIGHT_BRACE        &kp QUESTION  &trans
                                   &trans            &trans             &trans                                       &trans         &trans            &trans
             >;
+
+            label = "symb";
         };
 
         misc {
@@ -182,15 +186,19 @@
 &trans   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans   &trans
                          &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
+
+            label = "misc";
         };
 
         debug_bt {
             bindings = <
 &trans  &trans      &trans          &trans  &trans  &trans                        &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &btt0       &btt1           &btt2   &btt3   &btt4             &bt BT_PRV  &tog 0  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &btt0       &btt1           &btt2   &btt3   &btt4             &bt BT_PRV  &trans  &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans                &trans              &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans  &trans                                            &trans  &trans  &trans
             >;
+
+            label = "dbg_bt";
         };
     };
 };
