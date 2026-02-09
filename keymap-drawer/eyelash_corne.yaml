@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: debug_bt, h: toggle}
+  - {t: dbg_bt, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - H
   - J
@@ -45,11 +45,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - navigation
+  - nav
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - symbol
+  - symb
   - $$mdi:keyboard-esc$$
-  navigation:
+  nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&nvimq'
   - '&nvimw'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  symbol:
+  symb:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - <
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  debug_bt:
+  dbg_bt:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -217,7 +217,7 @@ layers:
   - '&btt3'
   - '&btt4'
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
