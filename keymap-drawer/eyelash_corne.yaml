@@ -249,8 +249,8 @@ combos:
 - p: [43, 46]
   k: misc
 - p: [16, 17]
-  k: $$mdi:keyboard-esc$$
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
 - p: [23, 24]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: $$mdi:keyboard-esc$$
   l: [QWERTY]

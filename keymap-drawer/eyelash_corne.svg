@@ -517,13 +517,13 @@ rect.held, rect.combo.held {
 <a href="#misc">
 <text x="490" y="209" class="combo tap layer-activator">misc</text>
 </a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
+<g class="combo enter combopos-1">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo enter"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="215" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="747" y="78" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
 </g>
 </g>
