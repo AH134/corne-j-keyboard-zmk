@@ -144,16 +144,16 @@
         };
 
         fd_escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp ENTER>;
             key-positions = <16 17>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         jk_enter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp ESCAPE>;
             key-positions = <23 24>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             layers = <0>;
         };
     };
