@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - nav
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-esc$$
+  - RIGHT GUI
   nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&nvimq'
