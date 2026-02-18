@@ -142,6 +142,20 @@
             bindings = <&mo 3>;
             key-positions = <43 46>;
         };
+
+        fd_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
+
+        jk_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <23 24>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -150,10 +164,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E         &kp R      &kp T                    &trans          &kp Y      &kp U  &kp I       &kp O    &kp P     &kp BACKSPACE
-&kp LSHIFT  &kp A  &kp S  &kp D         &kp F      &kp G            &trans  &tog 4  &trans  &kp H      &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LCTRL   &kp Z  &kp X  &kp C         &kp V      &kp B  &trans            &trans          &kp N      &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RCTRL
-                          &kp LEFT_ALT  &kp SPACE  &mo 1                                    &kp ENTER  &mo 2  &kp ESCAPE
+&kp TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                        &trans          &kp Y  &kp U      &kp I       &kp O    &kp P     &kp BACKSPACE
+&kp LSHIFT  &kp A  &kp S  &kp D         &kp F  &kp G                &trans  &tog 4  &trans  &kp H  &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LCTRL   &kp Z  &kp X  &kp C         &kp V  &kp B      &trans            &trans          &kp N  &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp RCTRL
+                          &kp LEFT_ALT  &mo 2  &kp ENTER                                    &mo 1  &kp SPACE  &kp ESCAPE
             >;
         };
 
@@ -170,10 +184,10 @@
 
         symbol {
             bindings = <
-&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp TILDE                    &trans          &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LBKT              &kp RBKT               &kp PERCENT   &trans
-&trans  &kp EXCL   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH             &trans  &trans  &trans  &kp PIPE       &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT        &trans
-&trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp BSLH           &kp UNDER  &trans            &trans          &backdir       &kp DOLLAR        &braceenter           &kp RIGHT_BRACE        &kp QUESTION  &trans
-                                  &trans            &trans             &trans                                       &trans         &trans            &trans
+&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp TILDE                    &trans          &kp AMPERSAND   &kp SINGLE_QUOTE  &kp LBKT              &kp RBKT               &kp PERCENT   &trans
+&trans  &kp EXCL   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH             &trans  &trans  &trans  &kp UNDERSCORE  &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT        &trans
+&trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp BSLH           &backdir   &trans            &trans          &kp PIPE        &kp DOLLAR        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &trans
+                                  &trans            &trans             &trans                                       &trans          &trans            &trans
             >;
 
             label = "symb";
@@ -199,6 +213,15 @@
             >;
 
             label = "dbg_bt";
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
