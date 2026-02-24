@@ -102,46 +102,41 @@
         btt0: bt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &bt BT_SEL 0 &tog 4>;
+            bindings = <&none &bt BT_SEL 0 &tog 3>;
             label = "BT1";
         };
 
         btt1: btt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &bt BT_SEL 1 &tog 4>;
+            bindings = <&none &bt BT_SEL 1 &tog 3>;
             label = "BTT1";
         };
 
         btt2: btt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &bt BT_SEL 2 &tog 4>;
+            bindings = <&none &bt BT_SEL 2 &tog 3>;
             label = "BTT2";
         };
 
         btt3: btt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &bt BT_SEL 3 &tog 4>;
+            bindings = <&none &bt BT_SEL 3 &tog 3>;
             label = "BTT3";
         };
 
         btt4: btt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &bt BT_SEL 4 &tog 4>;
+            bindings = <&none &bt BT_SEL 4 &tog 3>;
             label = "BTT4";
         };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        mo_misc {
-            bindings = <&mo 3>;
-            key-positions = <43 46>;
-        };
 
         fd_escape {
             bindings = <&kp ENTER>;
@@ -164,19 +159,19 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                        &trans          &kp Y  &kp U      &kp I          &kp O    &kp P     &kp BACKSPACE
-&kp LSHIFT  &kp A  &kp S  &kp D         &kp F  &kp G                &trans  &tog 4  &trans  &kp H  &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LCTRL   &kp Z  &kp X  &kp C         &kp V  &kp B      &trans            &trans          &kp N  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
-                          &kp LEFT_ALT  &mo 2  &kp ENTER                                    &mo 1  &kp SPACE  &kp RIGHT_GUI
+&kp TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                        &trans          &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LSHIFT  &kp A  &kp S  &kp D         &kp F  &kp G                &trans  &tog 3  &trans  &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL   &kp Z  &kp X  &kp C         &kp V  &kp B      &trans            &trans          &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                          &kp LEFT_ALT  &mo 2  &kp ENTER                                    &mo 1  &kp SPACE  &mo 4
             >;
         };
 
         navigation {
             bindings = <
-&trans  &nvimq          &nvimw    &nvimwq      &alttab  &trans                    &trans          &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &sk LEFT_SHIFT  &kp CAPS  &ctrlalttab  &kp F15  &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans          &trans    &trans       &trans   &trans  &trans            &trans          &trans    &trans    &trans        &trans     &trans  &trans
-                                  &trans       &trans   &trans                                    &trans    &trans    &trans
+&trans   &nvimq          &nvimw    &nvimwq      &alttab  &trans                    &trans          &trans    &trans    &trans        &trans     &trans   &trans
+&trans   &sk LEFT_SHIFT  &kp CAPS  &ctrlalttab  &kp F15  &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans   &trans
+&kp F12  &kp F1          &kp F2    &kp F3       &kp F4   &kp F5  &trans            &trans          &kp F6    &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
+                                   &trans       &trans   &trans                                    &trans    &trans    &trans
             >;
 
             label = "nav";
@@ -193,17 +188,6 @@
             label = "symb";
         };
 
-        misc {
-            bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &trans          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-
-            label = "misc";
-        };
-
         debug_bt {
             bindings = <
 &trans  &trans      &trans          &trans  &trans  &trans                        &trans              &trans  &trans  &trans  &trans  &trans  &trans
@@ -213,6 +197,16 @@
             >;
 
             label = "dbg_bt";
+        };
+
+        number_layer {
+            label = "num";
+            bindings = <
+&trans  &kp N8     &kp LESS_THAN  &kp GREATER_THAN  &kp N1     &kp N2                    &trans          &kp AMPERSAND   &kp N0     &kp LBKT              &kp RBKT               &kp PERCENT  &trans
+&trans  &kp EXCL   &kp MINUS      &kp PLUS          &kp EQUAL  &kp N5            &trans  &trans  &trans  &kp UNDERSCORE  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT       &trans
+&trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp N4     &kp N6  &trans            &trans          &kp N7          &kp N3     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp N9       &trans
+                                  &trans            &trans     &trans                                    &trans          &trans     &trans
+            >;
         };
     };
 };
