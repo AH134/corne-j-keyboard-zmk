@@ -254,4 +254,4 @@ combos:
   l: [QWERTY]
 - p: [38, 39]
   k: '&brace'
-  l: [num]
+  l: [num, symb]
