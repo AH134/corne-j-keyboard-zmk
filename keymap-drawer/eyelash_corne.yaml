@@ -235,8 +235,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '3', s: '#'}
-  - '{'
-  - '}'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '9', s: (}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -252,3 +252,6 @@ combos:
 - p: [23, 24]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
+- p: [38, 39]
+  k: '&brace'
+  l: [num]
