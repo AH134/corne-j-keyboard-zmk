@@ -95,7 +95,7 @@
         brace: braceenter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LBRC &kp RIGHT_BRACE &kp SEMICOLON &kp LEFT_ARROW &kp ENTER>;
+            bindings = <&none &kp LBRC &kp RIGHT_BRACE &kp SEMICOLON &kp LEFT_ARROW &kp LEFT_ARROW &kp ENTER>;
             label = "BRACEENTER";
         };
 
@@ -155,7 +155,7 @@
         brace_nl {
             bindings = <&brace>;
             key-positions = <38 39>;
-            layers = <4>;
+            layers = <4 2>;
         };
     };
 
