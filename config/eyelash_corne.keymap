@@ -92,10 +92,10 @@
             label = "BACKDIR";
         };
 
-        braceenter: braceenter {
+        brace: braceenter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LBRC &kp RET>;
+            bindings = <&none &kp LBRC &kp RIGHT_BRACE &kp SEMICOLON &kp LEFT_ARROW &kp ENTER>;
             label = "BRACEENTER";
         };
 
@@ -151,6 +151,12 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+
+        brace_nl {
+            bindings = <&brace>;
+            key-positions = <38 39>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -204,7 +210,7 @@
             bindings = <
 &trans  &kp N8     &kp LESS_THAN  &kp GREATER_THAN  &kp N1     &kp N2                    &trans          &kp AMPERSAND   &kp N0     &kp LBKT              &kp RBKT               &kp PERCENT  &trans
 &trans  &kp EXCL   &kp MINUS      &kp PLUS          &kp EQUAL  &kp N5            &trans  &trans  &trans  &kp UNDERSCORE  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT       &trans
-&trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp N4     &kp N6  &trans            &trans          &kp N7          &kp N3     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp N9       &trans
+&trans  &kp CARET  &kp FSLH       &kp ASTERISK      &kp N4     &kp N6  &trans            &trans          &kp N7          &kp N3     &trans                &trans                 &kp N9       &trans
                                   &trans            &trans     &trans                                    &trans          &trans     &trans
             >;
         };
